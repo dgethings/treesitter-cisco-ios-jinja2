@@ -1,0 +1,529 @@
+===
+timestamps
+===
+
+service timestamps
+
+---
+
+(config keyword: (service_statement keyword: (timestamps)))
+
+===
+timestamps debug
+===
+
+service timestamps debug
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug))))
+
+===
+timestamps log
+===
+
+service timestamps log
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log))))
+
+===
+timestamps debug uptime
+===
+
+service timestamps debug uptime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime))))
+
+===
+timestamps log uptime
+===
+
+service timestamps log uptime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime))))
+
+===
+timestamps debug uptime localtime
+===
+
+service timestamps debug uptime localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (localtime))))
+
+===
+timestamps log uptime localtime
+===
+
+service timestamps log uptime localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (localtime))))
+
+===
+timestamps debug uptime show-timezone
+===
+
+service timestamps debug uptime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (show_timezone))))
+
+===
+timestamps log uptime show-timezone
+===
+
+service timestamps log uptime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (show_timezone))))
+
+===
+timestamps debug uptime year
+===
+
+service timestamps debug uptime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (year))))
+
+===
+timestamps log uptime year
+===
+
+service timestamps log uptime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (year))))
+
+===
+timestamps debug uptime localtime show-timezone
+===
+
+service timestamps debug uptime localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (localtime) (show_timezone))))
+
+===
+timestamps log uptime localtime show-timezone
+===
+
+service timestamps log uptime localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (localtime) (show_timezone))))
+
+===
+timestamps debug uptime localtime year
+===
+
+service timestamps debug uptime localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (localtime) (year))))
+
+===
+timestamps log uptime localtime year
+===
+
+service timestamps log uptime localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (localtime) (year))))
+
+===
+timestamps debug uptime show-timezone year
+===
+
+service timestamps debug uptime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (show_timezone) (year))))
+
+===
+timestamps log uptime show-timezone year
+===
+
+service timestamps log uptime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (show_timezone) (year))))
+
+===
+timestamps debug uptime localtime show-timezone year
+===
+
+service timestamps debug uptime localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (uptime) (localtime) (show_timezone) (year))))
+
+===
+timestamps log uptime localtime show-timezone year
+===
+
+service timestamps log uptime localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (uptime) (localtime) (show_timezone) (year))))
+
+===
+timestamps debug datetime
+===
+
+service timestamps debug datetime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime))))
+
+===
+timestamps log datetime
+===
+
+service timestamps log datetime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime))))
+
+===
+timestamps debug datetime localtime
+===
+
+service timestamps debug datetime localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (localtime))))
+
+===
+timestamps log datetime localtime
+===
+
+service timestamps log datetime localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (localtime))))
+
+===
+timestamps debug datetime show-timezone
+===
+
+service timestamps debug datetime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (show_timezone))))
+
+===
+timestamps log datetime show-timezone
+===
+
+service timestamps log datetime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (show_timezone))))
+
+===
+timestamps debug datetime year
+===
+
+service timestamps debug datetime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (year))))
+
+===
+timestamps log datetime year
+===
+
+service timestamps log datetime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (year))))
+
+===
+timestamps debug datetime localtime show-timezone
+===
+
+service timestamps debug datetime localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (localtime) (show_timezone))))
+
+===
+timestamps log datetime localtime show-timezone
+===
+
+service timestamps log datetime localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (localtime) (show_timezone))))
+
+===
+timestamps debug datetime localtime year
+===
+
+service timestamps debug datetime localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (localtime) (year))))
+
+===
+timestamps log datetime localtime year
+===
+
+service timestamps log datetime localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (localtime) (year))))
+
+===
+timestamps debug datetime show-timezone year
+===
+
+service timestamps debug datetime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (show_timezone) (year))))
+
+===
+timestamps log datetime show-timezone year
+===
+
+service timestamps log datetime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (show_timezone) (year))))
+
+===
+timestamps debug datetime localtime show-timezone year
+===
+
+service timestamps debug datetime localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (localtime) (show_timezone) (year))))
+
+===
+timestamps log datetime localtime show-timezone year
+===
+
+service timestamps log datetime localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (localtime) (show_timezone) (year))))
+
+===
+timestamps debug datetime msec
+===
+
+service timestamps debug datetime msec
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec))))
+
+===
+timestamps log datetime msec
+===
+
+service timestamps log datetime msec
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec))))
+
+===
+timestamps debug datetime msec localtime
+===
+
+service timestamps debug datetime msec localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (localtime))))
+
+===
+timestamps log datetime msec localtime
+===
+
+service timestamps log datetime msec localtime
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (localtime))))
+
+===
+timestamps debug datetime msec show-timezone
+===
+
+service timestamps debug datetime msec show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (show_timezone))))
+
+===
+timestamps log datetime msec show-timezone
+===
+
+service timestamps log datetime msec show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (show_timezone))))
+
+===
+timestamps debug datetime msec year
+===
+
+service timestamps debug datetime msec year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (year))))
+
+===
+timestamps log datetime msec year
+===
+
+service timestamps log datetime msec year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (year))))
+
+===
+timestamps debug datetime msec localtime show-timezone
+===
+
+service timestamps debug datetime msec localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (localtime) (show_timezone))))
+
+===
+timestamps log datetime msec localtime show-timezone
+===
+
+service timestamps log datetime msec localtime show-timezone
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (localtime) (show_timezone))))
+
+===
+timestamps debug datetime msec localtime year
+===
+
+service timestamps debug datetime msec localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (localtime) (year))))
+
+===
+timestamps log datetime msec localtime year
+===
+
+service timestamps log datetime msec localtime year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (localtime) (year))))
+
+===
+timestamps debug datetime msec show-timezone year
+===
+
+service timestamps debug datetime msec show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (show_timezone) (year))))
+
+===
+timestamps log datetime msec show-timezone year
+===
+
+service timestamps log datetime msec show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (show_timezone) (year))))
+
+===
+timestamps debug datetime msec localtime show-timezone year
+===
+
+service timestamps debug datetime msec localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (debug) (datetime) (msec) (localtime) (show_timezone) (year))))
+
+===
+timestamps log datetime msec localtime show-timezone year
+===
+
+service timestamps log datetime msec localtime show-timezone year
+
+---
+
+(config keyword: (service_statement keyword: (timestamps keyword: (log) (datetime) (msec) (localtime) (show_timezone) (year))))
+
+===
+no timestamps debug
+===
+
+no service timestamps debug
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (timestamps keyword: (debug)))))
+
+===
+no timestamps log
+===
+
+no service timestamps log
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (timestamps keyword: (log)))))

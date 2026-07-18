@@ -1,0 +1,70 @@
+===
+integration
+===
+
+! preamble comment
+version 17.3
+!
+hostname r1
+!
+no service pad
+!
+interface GigabitEthernet0/0
+ ip address 10.0.0.1 255.255.255.0
+!
+{% for n in range(10) %}
+interface Loopback{{ n }}
+!
+{% endfor %}
+router bgp 100
+ neighbor 10.0.0.2 remote-as 100
+!
+no router bgp 200
+!
+---
+
+(config
+  (comment
+    (ios_comment))
+  (version_statement
+    (value))
+  (eos)
+  (hostname_statement
+    (value))
+  (eos)
+  (negated_statement
+    (negation_keyword)
+    (service_statement
+      (pad)))
+  (eos)
+  (interface_section
+    (interface_header
+      (interface_name))
+    (command_line
+      (identifier)
+      (value)
+      (value)
+      (value))
+    (eos))
+  (for_statement
+    (expression)
+    (interface_section
+      (interface_header
+        (interface_name)
+        (output))
+      (eos)))
+  (router_section
+    (router_header
+      (routing_protocol)
+      (value))
+    (neighbor_statement
+      (value)
+      (value)
+      (value))
+    (eos))
+  (negated_statement
+    (negation_keyword)
+    (router_header
+      (routing_protocol)
+      (value)))
+  (eos))

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "cisco_ios_jinja2",
+      "camelcase": "CiscoIosJinja2",
+      "title": "Cisco IOS + Jinja2",
+      "scope": "source.cisco_ios_jinja2",
+      "file-types": [
+        "cisco_ios_jinja2"
+      ],
+      "injection-regex": "^cisco_ios_jinja2$",
+      "class-name": "TreeSitterCiscoIosJinja2"
+    }
+  ],
+  "metadata": {
+    "version": "0.2.1",
+    "license": "MIT",
+    "description": "Tree sitter grammar for the Cisco IOS network Operating System",
+    "authors": [
+      {
+        "name": "David Gethings",
+        "email": "dgethings76@gmail.com",
+        "url": "https://github.com/dgethings"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/dgethings/tree-sitter-cisco-ios-jinja2"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}

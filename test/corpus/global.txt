@@ -1,0 +1,161 @@
+===
+snmp-server community
+===
+
+snmp-server community public RO
+
+---
+
+(config
+  (snmp_server_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+snmp-server host with multiple args
+===
+
+snmp-server host 10.0.0.1 version 2c public
+
+---
+
+(config
+  (snmp_server_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+scheduler allocate
+===
+
+scheduler allocate 5000 4000
+
+---
+
+(config
+  (scheduler_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+hw-module uplink
+===
+
+hw-module uplink
+
+---
+
+(config
+  (hw_module_statement
+    arg: (value)))
+
+===
+memory free low-watermark
+===
+
+memory free low-watermark 10240
+
+---
+
+(config
+  (memory_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+boot system
+===
+
+boot system flash:image.bin
+
+---
+
+(config
+  (boot_statement
+    arg: (value)
+    arg: (value)))
+
+===
+mac-address-table static
+===
+
+mac-address-table static 0000.0000.0001 vlan 10 interface Gi0/0
+
+---
+
+(config
+  (mac_address_table_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+tacacs-server host
+===
+
+tacacs-server host 10.0.0.5 key shared
+
+---
+
+(config
+  (tacacs_server_statement
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+parser config interface
+===
+
+parser config interface
+
+---
+
+(config
+  (parser_statement
+    arg: (value)
+    arg: (value)))
+
+===
+global rich negation (no snmp-server)
+===
+
+no snmp-server community private
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (snmp_server_statement
+      arg: (value)
+      arg: (value))))
+
+===
+global rich with jinja args
+===
+
+snmp-server community {{ name }} {{ ro }}
+scheduler allocate {{ interrupt }} {{ process }}
+
+---
+
+(config
+  (snmp_server_statement
+    arg: (value)
+    arg: (output)
+    arg: (output))
+  (scheduler_statement
+    arg: (value)
+    arg: (output)
+    arg: (output)))

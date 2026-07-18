@@ -1,0 +1,19 @@
+===
+hostname
+===
+
+hostname router1
+---
+
+(config
+  (hostname_statement hostname_value: (value)))
+
+===
+hostname with jinja2
+===
+
+hostname {{ value }}
+---
+
+(config
+    (hostname_statement hostname_value: (output)))

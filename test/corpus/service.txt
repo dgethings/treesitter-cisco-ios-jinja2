@@ -1,0 +1,354 @@
+===
+no pad
+===
+
+no service pad
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (service_statement keyword: (pad))))
+
+===
+no password recovery
+===
+
+no service password-recovery
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (service_statement keyword: (password_recovery))))
+
+===
+no service variable
+===
+
+{% for name in ["pad", "password-recovery", "tcp-smaller-servers"] %}
+no service {{ name }}
+{% endfor  %}
+
+---
+
+(config
+  (for_statement
+    iteration: (expression)
+    body: (negated_statement
+      (negation_keyword)
+      keyword: (service_statement (output)))
+))
+
+===
+compress_config
+===
+
+service compress-config
+
+---
+
+(config keyword: (service_statement keyword: (compress_config)))
+
+===
+no compress_config
+===
+
+no service compress-config
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (compress_config))))
+
+===
+service counters max age
+===
+
+service counters max age 60
+
+---
+
+(config keyword: (service_statement keyword: (counters keyword: (max keyword: (age (value))))))
+
+===
+service counters max age variable
+===
+
+service counters max age {{ secs }}
+
+---
+
+(config keyword: (service_statement keyword: (counters keyword: (max keyword: (age (output))))))
+
+===
+linenumber
+===
+
+service linenumber
+
+---
+
+(config keyword: (service_statement keyword: (linenumber)))
+
+===
+no linenumber
+===
+
+no service linenumber
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (linenumber))))
+
+===
+nagle
+===
+
+service nagle
+
+---
+
+(config keyword: (service_statement keyword: (nagle)))
+
+===
+no nagle
+===
+
+no service nagle
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (nagle))))
+
+===
+prompt config
+===
+
+service prompt config
+
+---
+
+(config keyword: (service_statement keyword: (prompt keyword: (config))))
+
+===
+no prompt config
+===
+
+no service prompt config
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (prompt keyword: (config)))))
+
+===
+tcp-keepalivea-in
+===
+
+service tcp-keepalives-in
+
+---
+
+(config keyword: (service_statement keyword: (tcp_keepalive_in)))
+
+===
+no tcp-keepalivea-in
+===
+
+no service tcp-keepalives-in
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (tcp_keepalive_in))))
+
+===
+tcp-keepalivea-out
+===
+
+service tcp-keepalives-out
+
+---
+
+(config keyword: (service_statement keyword: (tcp_keepalive_out)))
+
+===
+no tcp-keepalivea-out
+===
+
+no service tcp-keepalives-out
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (tcp_keepalive_out))))
+
+===
+tcp-small-servers
+===
+
+service tcp-small-servers
+
+---
+
+(config keyword: (service_statement keyword: (tcp_small_servers)))
+
+===
+no tcp-small-servers
+===
+
+no service tcp-small-servers
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (tcp_small_servers))))
+
+===
+tcp-small-servers no-limit
+===
+
+service tcp-small-servers no-limit
+
+---
+
+(config keyword: (service_statement keyword: (tcp_small_servers keyword: (no_limit))))
+
+===
+no tcp-small-servers no-limit
+===
+
+no service tcp-small-servers no-limit
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (tcp_small_servers keyword: (no_limit)))))
+
+===
+tcp-small-servers max-servers
+===
+
+service tcp-small-servers max-servers 14
+
+---
+
+(config keyword: (service_statement keyword: (tcp_small_servers keyword: (max_servers keyword: (value)))))
+
+===
+tcp-small-servers max-servers variable
+===
+
+service tcp-small-servers max-servers {{ number }}
+
+---
+
+(config keyword: (service_statement keyword: (tcp_small_servers keyword: (max_servers keyword: (output)))))
+
+===
+no udp-small-servers
+===
+
+no service udp-small-servers
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (udp_small_servers))))
+
+===
+udp-small-servers no-limit
+===
+
+service udp-small-servers no-limit
+
+---
+
+(config keyword: (service_statement keyword: (udp_small_servers keyword: (no_limit))))
+
+===
+no udp-small-servers no-limit
+===
+
+no service udp-small-servers no-limit
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement keyword: (udp_small_servers keyword: (no_limit)))))
+
+===
+udp-small-servers max-servers
+===
+
+service udp-small-servers max-servers 14
+
+---
+
+(config keyword: (service_statement keyword: (udp_small_servers keyword: (max_servers keyword: (value)))))
+
+===
+udp-small-servers max-servers variable
+===
+
+service udp-small-servers max-servers {{ number }}
+
+---
+
+(config keyword: (service_statement keyword: (udp_small_servers keyword: (max_servers keyword: (output)))))
+
+
+===
+fallback: service config
+===
+
+service config
+
+---
+
+(config keyword: (service_statement arg: (value)))
+
+===
+fallback: service decimal-tty
+===
+
+service decimal-tty
+
+---
+
+(config keyword: (service_statement arg: (value)))
+
+===
+fallback: no service exec-wait
+===
+
+no service exec-wait
+
+---
+
+(config (negated_statement (negation_keyword) keyword: (service_statement arg: (value))))
+
+===
+fallback: service sequence-numbers
+===
+
+service sequence-numbers
+
+---
+
+(config keyword: (service_statement arg: (value)))
+
+===
+fallback: service hide-telnet-address
+===
+
+service hide-telnet-address
+
+---
+
+(config keyword: (service_statement arg: (value)))
+
+===
+fallback: multi-token args
+===
+
+service netflow timeout 100
+
+---
+
+(config keyword: (service_statement arg: (value) arg: (value) arg: (value)))

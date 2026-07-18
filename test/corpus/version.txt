@@ -1,0 +1,21 @@
+===
+version text
+===
+
+version 17.3
+
+---
+
+(config
+  (version_statement configured_version: (value)))
+
+===
+version variable
+===
+
+version {{ ver }}
+
+---
+
+(config
+  (version_statement configured_version: (output)))

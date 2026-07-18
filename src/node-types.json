@@ -1,0 +1,6451 @@
+[
+  {
+    "type": "access_class_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "activation_character_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "address_family_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "af_interface_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "age",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "aggregate_address_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "assignment_statement",
+    "named": true,
+    "fields": {
+      "code": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "auto_cost_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "auto_sync_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "autonomous_system_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "block_statement",
+    "named": true,
+    "fields": {
+      "id": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boot_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "call_statement",
+    "named": true,
+    "fields": {
+      "call": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "class_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "command_line",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ios_comment",
+          "named": true
+        },
+        {
+          "type": "j2_comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compatible_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "config",
+    "named": true,
+    "root": true,
+    "fields": {
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "continue_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "counters",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "max",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "custom_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "custom_tag",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom_tag",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "databits_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "default_information_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "deny_statement",
+    "named": true,
+    "fields": {
+      "action_args": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "description_statement",
+    "named": true,
+    "fields": {
+      "text": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "distribute_list_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "drop_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "duplex_statement",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "editing_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "elif_statement",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "else_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "access_class_statement",
+            "named": true
+          },
+          {
+            "type": "activation_character_statement",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "auto_sync_statement",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "boot_statement",
+            "named": true
+          },
+          {
+            "type": "call_statement",
+            "named": true
+          },
+          {
+            "type": "class_statement",
+            "named": true
+          },
+          {
+            "type": "command_line",
+            "named": true
+          },
+          {
+            "type": "comment",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "custom_statement",
+            "named": true
+          },
+          {
+            "type": "databits_statement",
+            "named": true
+          },
+          {
+            "type": "deny_statement",
+            "named": true
+          },
+          {
+            "type": "drop_statement",
+            "named": true
+          },
+          {
+            "type": "editing_statement",
+            "named": true
+          },
+          {
+            "type": "end_assignment_statement",
+            "named": true
+          },
+          {
+            "type": "eos",
+            "named": true
+          },
+          {
+            "type": "escape_character_statement",
+            "named": true
+          },
+          {
+            "type": "exception_statement",
+            "named": true
+          },
+          {
+            "type": "exec_timeout_statement",
+            "named": true
+          },
+          {
+            "type": "extends_statement",
+            "named": true
+          },
+          {
+            "type": "filter_statement",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "hostname_statement",
+            "named": true
+          },
+          {
+            "type": "hw_module_statement",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_statement",
+            "named": true
+          },
+          {
+            "type": "include_statement",
+            "named": true
+          },
+          {
+            "type": "interface_section",
+            "named": true
+          },
+          {
+            "type": "kerberos_statement",
+            "named": true
+          },
+          {
+            "type": "length_statement",
+            "named": true
+          },
+          {
+            "type": "login_statement",
+            "named": true
+          },
+          {
+            "type": "mac_address_table_statement",
+            "named": true
+          },
+          {
+            "type": "macro_statement",
+            "named": true
+          },
+          {
+            "type": "match_statement",
+            "named": true
+          },
+          {
+            "type": "memory_statement",
+            "named": true
+          },
+          {
+            "type": "motd_banner_statement",
+            "named": true
+          },
+          {
+            "type": "negated_statement",
+            "named": true
+          },
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "padding_statement",
+            "named": true
+          },
+          {
+            "type": "parity_statement",
+            "named": true
+          },
+          {
+            "type": "parser_statement",
+            "named": true
+          },
+          {
+            "type": "password_statement",
+            "named": true
+          },
+          {
+            "type": "permit_statement",
+            "named": true
+          },
+          {
+            "type": "police_statement",
+            "named": true
+          },
+          {
+            "type": "priority_statement",
+            "named": true
+          },
+          {
+            "type": "private_vlan_statement",
+            "named": true
+          },
+          {
+            "type": "random_detect_statement",
+            "named": true
+          },
+          {
+            "type": "raw_statement",
+            "named": true
+          },
+          {
+            "type": "remote_span_statement",
+            "named": true
+          },
+          {
+            "type": "router_section",
+            "named": true
+          },
+          {
+            "type": "rtr_statement",
+            "named": true
+          },
+          {
+            "type": "scheduler_statement",
+            "named": true
+          },
+          {
+            "type": "service_statement",
+            "named": true
+          },
+          {
+            "type": "set_statement",
+            "named": true
+          },
+          {
+            "type": "snmp_server_statement",
+            "named": true
+          },
+          {
+            "type": "stopbits_statement",
+            "named": true
+          },
+          {
+            "type": "subscriber_statement",
+            "named": true
+          },
+          {
+            "type": "tacacs_server_statement",
+            "named": true
+          },
+          {
+            "type": "terminal_type_statement",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "transport_statement",
+            "named": true
+          },
+          {
+            "type": "version_statement",
+            "named": true
+          },
+          {
+            "type": "width_statement",
+            "named": true
+          },
+          {
+            "type": "with_statement",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "end_assignment_statement",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "escape_character_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "exception_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "exec_timeout_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "exit_address_family_statement",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "extends_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "filter_statement",
+    "named": true,
+    "fields": {
+      "code": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "for_else_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "access_class_statement",
+            "named": true
+          },
+          {
+            "type": "activation_character_statement",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "auto_sync_statement",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "boot_statement",
+            "named": true
+          },
+          {
+            "type": "call_statement",
+            "named": true
+          },
+          {
+            "type": "class_statement",
+            "named": true
+          },
+          {
+            "type": "command_line",
+            "named": true
+          },
+          {
+            "type": "comment",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "custom_statement",
+            "named": true
+          },
+          {
+            "type": "databits_statement",
+            "named": true
+          },
+          {
+            "type": "deny_statement",
+            "named": true
+          },
+          {
+            "type": "drop_statement",
+            "named": true
+          },
+          {
+            "type": "editing_statement",
+            "named": true
+          },
+          {
+            "type": "end_assignment_statement",
+            "named": true
+          },
+          {
+            "type": "eos",
+            "named": true
+          },
+          {
+            "type": "escape_character_statement",
+            "named": true
+          },
+          {
+            "type": "exception_statement",
+            "named": true
+          },
+          {
+            "type": "exec_timeout_statement",
+            "named": true
+          },
+          {
+            "type": "extends_statement",
+            "named": true
+          },
+          {
+            "type": "filter_statement",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "hostname_statement",
+            "named": true
+          },
+          {
+            "type": "hw_module_statement",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_statement",
+            "named": true
+          },
+          {
+            "type": "include_statement",
+            "named": true
+          },
+          {
+            "type": "interface_section",
+            "named": true
+          },
+          {
+            "type": "kerberos_statement",
+            "named": true
+          },
+          {
+            "type": "length_statement",
+            "named": true
+          },
+          {
+            "type": "login_statement",
+            "named": true
+          },
+          {
+            "type": "mac_address_table_statement",
+            "named": true
+          },
+          {
+            "type": "macro_statement",
+            "named": true
+          },
+          {
+            "type": "match_statement",
+            "named": true
+          },
+          {
+            "type": "memory_statement",
+            "named": true
+          },
+          {
+            "type": "motd_banner_statement",
+            "named": true
+          },
+          {
+            "type": "negated_statement",
+            "named": true
+          },
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "padding_statement",
+            "named": true
+          },
+          {
+            "type": "parity_statement",
+            "named": true
+          },
+          {
+            "type": "parser_statement",
+            "named": true
+          },
+          {
+            "type": "password_statement",
+            "named": true
+          },
+          {
+            "type": "permit_statement",
+            "named": true
+          },
+          {
+            "type": "police_statement",
+            "named": true
+          },
+          {
+            "type": "priority_statement",
+            "named": true
+          },
+          {
+            "type": "private_vlan_statement",
+            "named": true
+          },
+          {
+            "type": "random_detect_statement",
+            "named": true
+          },
+          {
+            "type": "raw_statement",
+            "named": true
+          },
+          {
+            "type": "remote_span_statement",
+            "named": true
+          },
+          {
+            "type": "router_section",
+            "named": true
+          },
+          {
+            "type": "rtr_statement",
+            "named": true
+          },
+          {
+            "type": "scheduler_statement",
+            "named": true
+          },
+          {
+            "type": "service_statement",
+            "named": true
+          },
+          {
+            "type": "set_statement",
+            "named": true
+          },
+          {
+            "type": "snmp_server_statement",
+            "named": true
+          },
+          {
+            "type": "stopbits_statement",
+            "named": true
+          },
+          {
+            "type": "subscriber_statement",
+            "named": true
+          },
+          {
+            "type": "tacacs_server_statement",
+            "named": true
+          },
+          {
+            "type": "terminal_type_statement",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "transport_statement",
+            "named": true
+          },
+          {
+            "type": "version_statement",
+            "named": true
+          },
+          {
+            "type": "width_statement",
+            "named": true
+          },
+          {
+            "type": "with_statement",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "for_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "access_class_statement",
+            "named": true
+          },
+          {
+            "type": "activation_character_statement",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "auto_sync_statement",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "boot_statement",
+            "named": true
+          },
+          {
+            "type": "call_statement",
+            "named": true
+          },
+          {
+            "type": "class_statement",
+            "named": true
+          },
+          {
+            "type": "command_line",
+            "named": true
+          },
+          {
+            "type": "comment",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "custom_statement",
+            "named": true
+          },
+          {
+            "type": "databits_statement",
+            "named": true
+          },
+          {
+            "type": "deny_statement",
+            "named": true
+          },
+          {
+            "type": "drop_statement",
+            "named": true
+          },
+          {
+            "type": "editing_statement",
+            "named": true
+          },
+          {
+            "type": "end_assignment_statement",
+            "named": true
+          },
+          {
+            "type": "eos",
+            "named": true
+          },
+          {
+            "type": "escape_character_statement",
+            "named": true
+          },
+          {
+            "type": "exception_statement",
+            "named": true
+          },
+          {
+            "type": "exec_timeout_statement",
+            "named": true
+          },
+          {
+            "type": "extends_statement",
+            "named": true
+          },
+          {
+            "type": "filter_statement",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "hostname_statement",
+            "named": true
+          },
+          {
+            "type": "hw_module_statement",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_statement",
+            "named": true
+          },
+          {
+            "type": "include_statement",
+            "named": true
+          },
+          {
+            "type": "interface_section",
+            "named": true
+          },
+          {
+            "type": "kerberos_statement",
+            "named": true
+          },
+          {
+            "type": "length_statement",
+            "named": true
+          },
+          {
+            "type": "login_statement",
+            "named": true
+          },
+          {
+            "type": "mac_address_table_statement",
+            "named": true
+          },
+          {
+            "type": "macro_statement",
+            "named": true
+          },
+          {
+            "type": "match_statement",
+            "named": true
+          },
+          {
+            "type": "memory_statement",
+            "named": true
+          },
+          {
+            "type": "motd_banner_statement",
+            "named": true
+          },
+          {
+            "type": "negated_statement",
+            "named": true
+          },
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "padding_statement",
+            "named": true
+          },
+          {
+            "type": "parity_statement",
+            "named": true
+          },
+          {
+            "type": "parser_statement",
+            "named": true
+          },
+          {
+            "type": "password_statement",
+            "named": true
+          },
+          {
+            "type": "permit_statement",
+            "named": true
+          },
+          {
+            "type": "police_statement",
+            "named": true
+          },
+          {
+            "type": "priority_statement",
+            "named": true
+          },
+          {
+            "type": "private_vlan_statement",
+            "named": true
+          },
+          {
+            "type": "random_detect_statement",
+            "named": true
+          },
+          {
+            "type": "raw_statement",
+            "named": true
+          },
+          {
+            "type": "remote_span_statement",
+            "named": true
+          },
+          {
+            "type": "router_section",
+            "named": true
+          },
+          {
+            "type": "rtr_statement",
+            "named": true
+          },
+          {
+            "type": "scheduler_statement",
+            "named": true
+          },
+          {
+            "type": "service_statement",
+            "named": true
+          },
+          {
+            "type": "set_statement",
+            "named": true
+          },
+          {
+            "type": "snmp_server_statement",
+            "named": true
+          },
+          {
+            "type": "stopbits_statement",
+            "named": true
+          },
+          {
+            "type": "subscriber_statement",
+            "named": true
+          },
+          {
+            "type": "tacacs_server_statement",
+            "named": true
+          },
+          {
+            "type": "terminal_type_statement",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "transport_statement",
+            "named": true
+          },
+          {
+            "type": "version_statement",
+            "named": true
+          },
+          {
+            "type": "width_statement",
+            "named": true
+          },
+          {
+            "type": "with_statement",
+            "named": true
+          }
+        ]
+      },
+      "iteration": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "for_else_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "graceful_restart_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "hostname_statement",
+    "named": true,
+    "fields": {
+      "hostname_value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "hw_module_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "if_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "access_class_statement",
+            "named": true
+          },
+          {
+            "type": "activation_character_statement",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "auto_sync_statement",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "boot_statement",
+            "named": true
+          },
+          {
+            "type": "call_statement",
+            "named": true
+          },
+          {
+            "type": "class_statement",
+            "named": true
+          },
+          {
+            "type": "command_line",
+            "named": true
+          },
+          {
+            "type": "comment",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "custom_statement",
+            "named": true
+          },
+          {
+            "type": "databits_statement",
+            "named": true
+          },
+          {
+            "type": "deny_statement",
+            "named": true
+          },
+          {
+            "type": "drop_statement",
+            "named": true
+          },
+          {
+            "type": "editing_statement",
+            "named": true
+          },
+          {
+            "type": "end_assignment_statement",
+            "named": true
+          },
+          {
+            "type": "eos",
+            "named": true
+          },
+          {
+            "type": "escape_character_statement",
+            "named": true
+          },
+          {
+            "type": "exception_statement",
+            "named": true
+          },
+          {
+            "type": "exec_timeout_statement",
+            "named": true
+          },
+          {
+            "type": "extends_statement",
+            "named": true
+          },
+          {
+            "type": "filter_statement",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "hostname_statement",
+            "named": true
+          },
+          {
+            "type": "hw_module_statement",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_statement",
+            "named": true
+          },
+          {
+            "type": "include_statement",
+            "named": true
+          },
+          {
+            "type": "interface_section",
+            "named": true
+          },
+          {
+            "type": "kerberos_statement",
+            "named": true
+          },
+          {
+            "type": "length_statement",
+            "named": true
+          },
+          {
+            "type": "login_statement",
+            "named": true
+          },
+          {
+            "type": "mac_address_table_statement",
+            "named": true
+          },
+          {
+            "type": "macro_statement",
+            "named": true
+          },
+          {
+            "type": "match_statement",
+            "named": true
+          },
+          {
+            "type": "memory_statement",
+            "named": true
+          },
+          {
+            "type": "motd_banner_statement",
+            "named": true
+          },
+          {
+            "type": "negated_statement",
+            "named": true
+          },
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "padding_statement",
+            "named": true
+          },
+          {
+            "type": "parity_statement",
+            "named": true
+          },
+          {
+            "type": "parser_statement",
+            "named": true
+          },
+          {
+            "type": "password_statement",
+            "named": true
+          },
+          {
+            "type": "permit_statement",
+            "named": true
+          },
+          {
+            "type": "police_statement",
+            "named": true
+          },
+          {
+            "type": "priority_statement",
+            "named": true
+          },
+          {
+            "type": "private_vlan_statement",
+            "named": true
+          },
+          {
+            "type": "random_detect_statement",
+            "named": true
+          },
+          {
+            "type": "raw_statement",
+            "named": true
+          },
+          {
+            "type": "remote_span_statement",
+            "named": true
+          },
+          {
+            "type": "router_section",
+            "named": true
+          },
+          {
+            "type": "rtr_statement",
+            "named": true
+          },
+          {
+            "type": "scheduler_statement",
+            "named": true
+          },
+          {
+            "type": "service_statement",
+            "named": true
+          },
+          {
+            "type": "set_statement",
+            "named": true
+          },
+          {
+            "type": "snmp_server_statement",
+            "named": true
+          },
+          {
+            "type": "stopbits_statement",
+            "named": true
+          },
+          {
+            "type": "subscriber_statement",
+            "named": true
+          },
+          {
+            "type": "tacacs_server_statement",
+            "named": true
+          },
+          {
+            "type": "terminal_type_statement",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "transport_statement",
+            "named": true
+          },
+          {
+            "type": "version_statement",
+            "named": true
+          },
+          {
+            "type": "width_statement",
+            "named": true
+          },
+          {
+            "type": "with_statement",
+            "named": true
+          }
+        ]
+      },
+      "condition": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "elif": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "elif_statement",
+            "named": true
+          }
+        ]
+      },
+      "else": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "else_statement",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "import_statement",
+    "named": true,
+    "fields": {
+      "id": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interface_header",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "interface_name",
+            "named": true
+          },
+          {
+            "type": "output",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "interface_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "address_family_statement",
+          "named": true
+        },
+        {
+          "type": "af_interface_statement",
+          "named": true
+        },
+        {
+          "type": "aggregate_address_statement",
+          "named": true
+        },
+        {
+          "type": "auto_cost_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "autonomous_system_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "compatible_statement",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "default_information_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "description_statement",
+          "named": true
+        },
+        {
+          "type": "distribute_list_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "duplex_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "exit_address_family_statement",
+          "named": true
+        },
+        {
+          "type": "graceful_restart_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "interface_header",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "maximum_prefix_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "metric_style_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "mtu_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "neighbor_statement",
+          "named": true
+        },
+        {
+          "type": "network_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "passive_interface_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "queue_depth_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "redistribute_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_id_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "service_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "shutdown_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "speed_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "summary_prefix_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "j2_comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "kerberos_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "length_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "login_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "mac_address_table_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "macro_statement",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      },
+      "signature": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "max",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "age",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "max_servers",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "maximum_prefix_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "memory_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "metric_style_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "motd_banner_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "mtu_statement",
+    "named": true,
+    "fields": {
+      "size": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "negated_statement",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "access_class_statement",
+            "named": true
+          },
+          {
+            "type": "activation_character_statement",
+            "named": true
+          },
+          {
+            "type": "address_family_statement",
+            "named": true
+          },
+          {
+            "type": "af_interface_statement",
+            "named": true
+          },
+          {
+            "type": "aggregate_address_statement",
+            "named": true
+          },
+          {
+            "type": "auto_cost_statement",
+            "named": true
+          },
+          {
+            "type": "auto_sync_statement",
+            "named": true
+          },
+          {
+            "type": "autonomous_system_statement",
+            "named": true
+          },
+          {
+            "type": "boot_statement",
+            "named": true
+          },
+          {
+            "type": "class_statement",
+            "named": true
+          },
+          {
+            "type": "command_line",
+            "named": true
+          },
+          {
+            "type": "compatible_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "databits_statement",
+            "named": true
+          },
+          {
+            "type": "default_information_statement",
+            "named": true
+          },
+          {
+            "type": "deny_statement",
+            "named": true
+          },
+          {
+            "type": "description_statement",
+            "named": true
+          },
+          {
+            "type": "distribute_list_statement",
+            "named": true
+          },
+          {
+            "type": "drop_statement",
+            "named": true
+          },
+          {
+            "type": "duplex_statement",
+            "named": true
+          },
+          {
+            "type": "editing_statement",
+            "named": true
+          },
+          {
+            "type": "escape_character_statement",
+            "named": true
+          },
+          {
+            "type": "exception_statement",
+            "named": true
+          },
+          {
+            "type": "exec_timeout_statement",
+            "named": true
+          },
+          {
+            "type": "exit_address_family_statement",
+            "named": true
+          },
+          {
+            "type": "graceful_restart_statement",
+            "named": true
+          },
+          {
+            "type": "hostname_statement",
+            "named": true
+          },
+          {
+            "type": "hw_module_statement",
+            "named": true
+          },
+          {
+            "type": "interface_header",
+            "named": true
+          },
+          {
+            "type": "kerberos_statement",
+            "named": true
+          },
+          {
+            "type": "length_statement",
+            "named": true
+          },
+          {
+            "type": "login_statement",
+            "named": true
+          },
+          {
+            "type": "mac_address_table_statement",
+            "named": true
+          },
+          {
+            "type": "match_statement",
+            "named": true
+          },
+          {
+            "type": "maximum_prefix_statement",
+            "named": true
+          },
+          {
+            "type": "memory_statement",
+            "named": true
+          },
+          {
+            "type": "metric_style_statement",
+            "named": true
+          },
+          {
+            "type": "motd_banner_statement",
+            "named": true
+          },
+          {
+            "type": "mtu_statement",
+            "named": true
+          },
+          {
+            "type": "neighbor_statement",
+            "named": true
+          },
+          {
+            "type": "network_statement",
+            "named": true
+          },
+          {
+            "type": "padding_statement",
+            "named": true
+          },
+          {
+            "type": "parity_statement",
+            "named": true
+          },
+          {
+            "type": "parser_statement",
+            "named": true
+          },
+          {
+            "type": "passive_interface_statement",
+            "named": true
+          },
+          {
+            "type": "password_statement",
+            "named": true
+          },
+          {
+            "type": "permit_statement",
+            "named": true
+          },
+          {
+            "type": "police_statement",
+            "named": true
+          },
+          {
+            "type": "priority_statement",
+            "named": true
+          },
+          {
+            "type": "private_vlan_statement",
+            "named": true
+          },
+          {
+            "type": "queue_depth_statement",
+            "named": true
+          },
+          {
+            "type": "random_detect_statement",
+            "named": true
+          },
+          {
+            "type": "redistribute_statement",
+            "named": true
+          },
+          {
+            "type": "remote_span_statement",
+            "named": true
+          },
+          {
+            "type": "router_header",
+            "named": true
+          },
+          {
+            "type": "router_id_statement",
+            "named": true
+          },
+          {
+            "type": "rtr_statement",
+            "named": true
+          },
+          {
+            "type": "scheduler_statement",
+            "named": true
+          },
+          {
+            "type": "service_statement",
+            "named": true
+          },
+          {
+            "type": "set_statement",
+            "named": true
+          },
+          {
+            "type": "shutdown_statement",
+            "named": true
+          },
+          {
+            "type": "snmp_server_statement",
+            "named": true
+          },
+          {
+            "type": "speed_statement",
+            "named": true
+          },
+          {
+            "type": "stopbits_statement",
+            "named": true
+          },
+          {
+            "type": "subscriber_statement",
+            "named": true
+          },
+          {
+            "type": "summary_prefix_statement",
+            "named": true
+          },
+          {
+            "type": "tacacs_server_statement",
+            "named": true
+          },
+          {
+            "type": "terminal_type_statement",
+            "named": true
+          },
+          {
+            "type": "transport_statement",
+            "named": true
+          },
+          {
+            "type": "version_statement",
+            "named": true
+          },
+          {
+            "type": "width_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "negation_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "neighbor_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "network_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "output",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "padding_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "parity_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "parser_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "passive_interface_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "password_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "permit_statement",
+    "named": true,
+    "fields": {
+      "action_args": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "police_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "priority_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "private_vlan_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "prompt",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "config",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "queue_depth_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "random_detect_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "raw_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "redistribute_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "remote_span_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "router_header",
+    "named": true,
+    "fields": {
+      "process_id": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      },
+      "protocol": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "routing_protocol",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "router_id_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "router_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "address_family_statement",
+          "named": true
+        },
+        {
+          "type": "af_interface_statement",
+          "named": true
+        },
+        {
+          "type": "aggregate_address_statement",
+          "named": true
+        },
+        {
+          "type": "auto_cost_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "autonomous_system_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "compatible_statement",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "default_information_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "description_statement",
+          "named": true
+        },
+        {
+          "type": "distribute_list_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "duplex_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "exit_address_family_statement",
+          "named": true
+        },
+        {
+          "type": "graceful_restart_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "maximum_prefix_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "metric_style_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "mtu_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "neighbor_statement",
+          "named": true
+        },
+        {
+          "type": "network_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "passive_interface_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "queue_depth_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "redistribute_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_header",
+          "named": true
+        },
+        {
+          "type": "router_id_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "service_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "shutdown_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "speed_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "summary_prefix_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "routing_protocol",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "rtr_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "scheduler_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "service_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "compress_config",
+            "named": true
+          },
+          {
+            "type": "counters",
+            "named": true
+          },
+          {
+            "type": "linenumber",
+            "named": true
+          },
+          {
+            "type": "nagle",
+            "named": true
+          },
+          {
+            "type": "pad",
+            "named": true
+          },
+          {
+            "type": "password_recovery",
+            "named": true
+          },
+          {
+            "type": "prompt",
+            "named": true
+          },
+          {
+            "type": "tcp_keepalive_in",
+            "named": true
+          },
+          {
+            "type": "tcp_keepalive_out",
+            "named": true
+          },
+          {
+            "type": "tcp_small_servers",
+            "named": true
+          },
+          {
+            "type": "timestamps",
+            "named": true
+          },
+          {
+            "type": "udp_small_servers",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "output",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "shutdown_statement",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "snmp_server_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "speed_statement",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "stopbits_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "subscriber_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "summary_prefix_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "tacacs_server_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "tcp_small_servers",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "max_servers",
+            "named": true
+          },
+          {
+            "type": "no_limit",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "terminal_type_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "timestamps",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "debug",
+            "named": true
+          },
+          {
+            "type": "log",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "datetime",
+          "named": true
+        },
+        {
+          "type": "localtime",
+          "named": true
+        },
+        {
+          "type": "msec",
+          "named": true
+        },
+        {
+          "type": "show_timezone",
+          "named": true
+        },
+        {
+          "type": "uptime",
+          "named": true
+        },
+        {
+          "type": "year",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "transport_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "udp_small_servers",
+    "named": true,
+    "fields": {
+      "keyword": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "max_servers",
+            "named": true
+          },
+          {
+            "type": "no_limit",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "version_statement",
+    "named": true,
+    "fields": {
+      "configured_version": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "width_statement",
+    "named": true,
+    "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "output",
+            "named": true
+          },
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "with_statement",
+    "named": true,
+    "fields": {
+      "assignment": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "service_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_class_statement",
+          "named": true
+        },
+        {
+          "type": "activation_character_statement",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "auto_sync_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "boot_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "class_statement",
+          "named": true
+        },
+        {
+          "type": "command_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "custom_statement",
+          "named": true
+        },
+        {
+          "type": "databits_statement",
+          "named": true
+        },
+        {
+          "type": "deny_statement",
+          "named": true
+        },
+        {
+          "type": "drop_statement",
+          "named": true
+        },
+        {
+          "type": "editing_statement",
+          "named": true
+        },
+        {
+          "type": "end_assignment_statement",
+          "named": true
+        },
+        {
+          "type": "eos",
+          "named": true
+        },
+        {
+          "type": "escape_character_statement",
+          "named": true
+        },
+        {
+          "type": "exception_statement",
+          "named": true
+        },
+        {
+          "type": "exec_timeout_statement",
+          "named": true
+        },
+        {
+          "type": "extends_statement",
+          "named": true
+        },
+        {
+          "type": "filter_statement",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "hostname_statement",
+          "named": true
+        },
+        {
+          "type": "hw_module_statement",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_statement",
+          "named": true
+        },
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "interface_section",
+          "named": true
+        },
+        {
+          "type": "kerberos_statement",
+          "named": true
+        },
+        {
+          "type": "length_statement",
+          "named": true
+        },
+        {
+          "type": "login_statement",
+          "named": true
+        },
+        {
+          "type": "mac_address_table_statement",
+          "named": true
+        },
+        {
+          "type": "macro_statement",
+          "named": true
+        },
+        {
+          "type": "match_statement",
+          "named": true
+        },
+        {
+          "type": "memory_statement",
+          "named": true
+        },
+        {
+          "type": "motd_banner_statement",
+          "named": true
+        },
+        {
+          "type": "negated_statement",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "padding_statement",
+          "named": true
+        },
+        {
+          "type": "parity_statement",
+          "named": true
+        },
+        {
+          "type": "parser_statement",
+          "named": true
+        },
+        {
+          "type": "password_statement",
+          "named": true
+        },
+        {
+          "type": "permit_statement",
+          "named": true
+        },
+        {
+          "type": "police_statement",
+          "named": true
+        },
+        {
+          "type": "priority_statement",
+          "named": true
+        },
+        {
+          "type": "private_vlan_statement",
+          "named": true
+        },
+        {
+          "type": "random_detect_statement",
+          "named": true
+        },
+        {
+          "type": "raw_statement",
+          "named": true
+        },
+        {
+          "type": "remote_span_statement",
+          "named": true
+        },
+        {
+          "type": "router_section",
+          "named": true
+        },
+        {
+          "type": "rtr_statement",
+          "named": true
+        },
+        {
+          "type": "scheduler_statement",
+          "named": true
+        },
+        {
+          "type": "set_statement",
+          "named": true
+        },
+        {
+          "type": "snmp_server_statement",
+          "named": true
+        },
+        {
+          "type": "stopbits_statement",
+          "named": true
+        },
+        {
+          "type": "subscriber_statement",
+          "named": true
+        },
+        {
+          "type": "tacacs_server_statement",
+          "named": true
+        },
+        {
+          "type": "terminal_type_statement",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "transport_statement",
+          "named": true
+        },
+        {
+          "type": "version_statement",
+          "named": true
+        },
+        {
+          "type": "width_statement",
+          "named": true
+        },
+        {
+          "type": "with_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "#}",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "_keyword",
+    "named": false
+  },
+  {
+    "type": "access-class",
+    "named": false
+  },
+  {
+    "type": "activation-character",
+    "named": false
+  },
+  {
+    "type": "address-family",
+    "named": false
+  },
+  {
+    "type": "af-interface",
+    "named": false
+  },
+  {
+    "type": "age",
+    "named": false
+  },
+  {
+    "type": "aggregate-address",
+    "named": false
+  },
+  {
+    "type": "auto-cost",
+    "named": false
+  },
+  {
+    "type": "auto-sync",
+    "named": false
+  },
+  {
+    "type": "autonomous-system",
+    "named": false
+  },
+  {
+    "type": "bgp",
+    "named": false
+  },
+  {
+    "type": "boot",
+    "named": false
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "compatible",
+    "named": false
+  },
+  {
+    "type": "compress_config",
+    "named": true
+  },
+  {
+    "type": "continue",
+    "named": false
+  },
+  {
+    "type": "counters",
+    "named": false
+  },
+  {
+    "type": "databits",
+    "named": false
+  },
+  {
+    "type": "datetime",
+    "named": true
+  },
+  {
+    "type": "debug",
+    "named": true
+  },
+  {
+    "type": "default-information",
+    "named": false
+  },
+  {
+    "type": "deny",
+    "named": false
+  },
+  {
+    "type": "description",
+    "named": false
+  },
+  {
+    "type": "distribute-list",
+    "named": false
+  },
+  {
+    "type": "drop",
+    "named": false
+  },
+  {
+    "type": "duplex",
+    "named": false
+  },
+  {
+    "type": "editing",
+    "named": false
+  },
+  {
+    "type": "eos",
+    "named": true
+  },
+  {
+    "type": "escape-character",
+    "named": false
+  },
+  {
+    "type": "exception",
+    "named": false
+  },
+  {
+    "type": "exec-timeout",
+    "named": false
+  },
+  {
+    "type": "exit-address-family",
+    "named": false
+  },
+  {
+    "type": "graceful-restart",
+    "named": false
+  },
+  {
+    "type": "hostname",
+    "named": false
+  },
+  {
+    "type": "hw-module",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "interface",
+    "named": false
+  },
+  {
+    "type": "interface_name",
+    "named": true
+  },
+  {
+    "type": "ios_comment",
+    "named": true
+  },
+  {
+    "type": "kerberos",
+    "named": false
+  },
+  {
+    "type": "length",
+    "named": false
+  },
+  {
+    "type": "linenumber",
+    "named": true
+  },
+  {
+    "type": "localtime",
+    "named": true
+  },
+  {
+    "type": "log",
+    "named": true
+  },
+  {
+    "type": "login",
+    "named": false
+  },
+  {
+    "type": "mac-address-table",
+    "named": false
+  },
+  {
+    "type": "match",
+    "named": false
+  },
+  {
+    "type": "max",
+    "named": false
+  },
+  {
+    "type": "max-servers",
+    "named": false
+  },
+  {
+    "type": "maximum-prefix",
+    "named": false
+  },
+  {
+    "type": "memory",
+    "named": false
+  },
+  {
+    "type": "metric-style",
+    "named": false
+  },
+  {
+    "type": "motd-banner",
+    "named": false
+  },
+  {
+    "type": "msec",
+    "named": true
+  },
+  {
+    "type": "mtu",
+    "named": false
+  },
+  {
+    "type": "nagle",
+    "named": true
+  },
+  {
+    "type": "negation_keyword",
+    "named": true
+  },
+  {
+    "type": "neighbor",
+    "named": false
+  },
+  {
+    "type": "network",
+    "named": false
+  },
+  {
+    "type": "no_limit",
+    "named": true
+  },
+  {
+    "type": "ospf",
+    "named": false
+  },
+  {
+    "type": "pad",
+    "named": true
+  },
+  {
+    "type": "padding",
+    "named": false
+  },
+  {
+    "type": "parity",
+    "named": false
+  },
+  {
+    "type": "parser",
+    "named": false
+  },
+  {
+    "type": "passive-interface",
+    "named": false
+  },
+  {
+    "type": "password",
+    "named": false
+  },
+  {
+    "type": "password_recovery",
+    "named": true
+  },
+  {
+    "type": "permit",
+    "named": false
+  },
+  {
+    "type": "police",
+    "named": false
+  },
+  {
+    "type": "priority",
+    "named": false
+  },
+  {
+    "type": "private-vlan",
+    "named": false
+  },
+  {
+    "type": "prompt",
+    "named": false
+  },
+  {
+    "type": "queue-depth",
+    "named": false
+  },
+  {
+    "type": "random-detect",
+    "named": false
+  },
+  {
+    "type": "raw_end",
+    "named": false
+  },
+  {
+    "type": "raw_start",
+    "named": false
+  },
+  {
+    "type": "redistribute",
+    "named": false
+  },
+  {
+    "type": "remote-span",
+    "named": false
+  },
+  {
+    "type": "router",
+    "named": false
+  },
+  {
+    "type": "router-id",
+    "named": false
+  },
+  {
+    "type": "rtr",
+    "named": false
+  },
+  {
+    "type": "scheduler",
+    "named": false
+  },
+  {
+    "type": "service",
+    "named": false
+  },
+  {
+    "type": "set",
+    "named": false
+  },
+  {
+    "type": "show_timezone",
+    "named": true
+  },
+  {
+    "type": "shutdown",
+    "named": false
+  },
+  {
+    "type": "snmp-server",
+    "named": false
+  },
+  {
+    "type": "speed",
+    "named": false
+  },
+  {
+    "type": "statement_end",
+    "named": false
+  },
+  {
+    "type": "statement_start",
+    "named": false
+  },
+  {
+    "type": "stopbits",
+    "named": false
+  },
+  {
+    "type": "subscriber",
+    "named": false
+  },
+  {
+    "type": "summary-prefix",
+    "named": false
+  },
+  {
+    "type": "tacacs-server",
+    "named": false
+  },
+  {
+    "type": "tcp-small-servers",
+    "named": false
+  },
+  {
+    "type": "tcp_keepalive_in",
+    "named": true
+  },
+  {
+    "type": "tcp_keepalive_out",
+    "named": true
+  },
+  {
+    "type": "terminal-type",
+    "named": false
+  },
+  {
+    "type": "timestamps",
+    "named": false
+  },
+  {
+    "type": "transport",
+    "named": false
+  },
+  {
+    "type": "udp-small-servers",
+    "named": false
+  },
+  {
+    "type": "uptime",
+    "named": true
+  },
+  {
+    "type": "value",
+    "named": true
+  },
+  {
+    "type": "version",
+    "named": false
+  },
+  {
+    "type": "width",
+    "named": false
+  },
+  {
+    "type": "year",
+    "named": true
+  },
+  {
+    "type": "{#",
+    "named": false
+  },
+  {
+    "type": "{{",
+    "named": false
+  },
+  {
+    "type": "}}",
+    "named": false
+  }
+]

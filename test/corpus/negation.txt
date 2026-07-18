@@ -1,0 +1,69 @@
+===
+no hostname
+===
+
+no hostname foo
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (hostname_statement
+      hostname_value: (value))))
+
+===
+no version
+===
+
+no version 17.3
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (version_statement
+      configured_version: (value))))
+
+===
+no router bgp
+===
+
+no router bgp 100
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (router_header
+      protocol: (routing_protocol)
+      process_id: (value))))
+
+===
+no interface header negation
+===
+
+no interface Gi0/0
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (interface_header
+      name: (interface_name))))
+
+===
+no service pad regression
+===
+
+no service pad
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (service_statement keyword: (pad))))

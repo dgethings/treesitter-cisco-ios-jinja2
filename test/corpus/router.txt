@@ -1,0 +1,244 @@
+===
+router bgp empty body
+===
+
+router bgp 100
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (eos)))
+
+===
+router ospf with unrecognized body
+===
+
+router ospf 1
+ network 10.0.0.0 0.0.0.255 area 0
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (network_statement
+      arg: (value)
+      arg: (value)
+      arg: (value)
+      arg: (value))
+    (eos)))
+
+===
+router ospf rich commands
+===
+
+router ospf 1
+ router-id 1.1.1.1
+ passive-interface GigabitEthernet0/0
+ network 10.0.0.0 0.0.0.255 area 0
+ redistribute bgp metric 100
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (router_id_statement
+      arg: (value))
+    (passive_interface_statement
+      arg: (value))
+    (network_statement
+      arg: (value)
+      arg: (value)
+      arg: (value)
+      arg: (value))
+    (redistribute_statement
+      arg: (value)
+      arg: (value)
+      arg: (value))
+    (eos)))
+
+===
+router bgp neighbor and address-family
+===
+
+router bgp 100
+ neighbor 10.0.0.2 remote-as 200
+ address-family ipv4 unicast
+  neighbor 10.0.0.2 activate
+  aggregate-address 10.0.0.0 255.0.0.0
+  maximum-prefix 1000 90
+ exit-address-family
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (neighbor_statement
+      arg: (value)
+      arg: (value)
+      arg: (value))
+    (address_family_statement
+      arg: (value)
+      arg: (value))
+    (neighbor_statement
+      arg: (value)
+      arg: (value))
+    (aggregate_address_statement
+      arg: (value)
+      arg: (value))
+    (maximum_prefix_statement
+      arg: (value)
+      arg: (value))
+    (exit_address_family_statement)
+    (eos)))
+
+===
+config-router rich negation
+===
+
+router ospf 1
+ no neighbor 10.0.0.2
+ no network 10.0.0.0 0.0.0.255 area 0
+ no passive-interface GigabitEthernet0/0
+ no redistribute bgp
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (negated_statement
+      (negation_keyword)
+      keyword: (neighbor_statement
+        arg: (value)))
+    (negated_statement
+      (negation_keyword)
+      keyword: (network_statement
+        arg: (value)
+        arg: (value)
+        arg: (value)
+        arg: (value)))
+    (negated_statement
+      (negation_keyword)
+      keyword: (passive_interface_statement
+        arg: (value)))
+    (negated_statement
+      (negation_keyword)
+      keyword: (redistribute_statement
+        arg: (value)))
+    (eos)))
+
+===
+config-router rich commands with jinja args
+===
+
+router bgp 100
+ neighbor {{ peer }} remote-as {{ asn }}
+ network {{ prefix }}
+ router-id {{ rid }}
+ redistribute {{ proto }}
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (neighbor_statement
+      arg: (output)
+      arg: (value)
+      arg: (output))
+    (network_statement
+      arg: (output))
+    (router_id_statement
+      arg: (output))
+    (redistribute_statement
+      arg: (output))
+    (eos)))
+
+===
+config-router bare-form keywords
+===
+
+router ospf 1
+ passive-interface
+ graceful-restart
+ default-information
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (passive_interface_statement)
+    (graceful_restart_statement)
+    (default_information_statement)
+    (eos)))
+
+===
+config-router hyphenated rich commands
+===
+
+router ospf 1
+ metric-style wide
+ summary-prefix 10.0.0.0 255.0.0.0
+ distribute-list 10 in
+ queue-depth hello 100
+ compatible rfc1587
+ auto-cost reference-bandwidth 100000
+ af-interface GigabitEthernet0/0
+ autonomous-system 100
+!
+
+---
+
+(config
+  (router_section
+    (router_header
+      protocol: (routing_protocol)
+      process_id: (value))
+    (metric_style_statement
+      arg: (value))
+    (summary_prefix_statement
+      arg: (value)
+      arg: (value))
+    (distribute_list_statement
+      arg: (value)
+      arg: (value))
+    (queue_depth_statement
+      arg: (value)
+      arg: (value))
+    (compatible_statement
+      arg: (value))
+    (auto_cost_statement
+      arg: (value)
+      arg: (value))
+    (af_interface_statement
+      arg: (value))
+    (autonomous_system_statement
+      arg: (value))
+    (eos)))

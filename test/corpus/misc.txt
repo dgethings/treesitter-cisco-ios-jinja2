@@ -1,0 +1,149 @@
+===
+route-map match and set pair
+===
+
+match ip address 10
+set metric 100
+
+---
+
+(config
+  (match_statement
+    arg: (value)
+    arg: (value)
+    arg: (value))
+  (set_statement
+    arg: (value)
+    arg: (value)))
+
+===
+class-map match any
+===
+
+match any
+
+---
+
+(config
+  (match_statement
+    arg: (value)))
+
+===
+policy-map class with police/priority/drop
+===
+
+class class-default
+police 1000000 20000
+priority
+drop
+
+---
+
+(config
+  (class_statement
+    arg: (value))
+  (police_statement
+    arg: (value)
+    arg: (value))
+  (priority_statement)
+  (drop_statement))
+
+===
+vlan remote-span
+===
+
+remote-span
+
+---
+
+(config
+  (remote_span_statement))
+
+===
+vlan private-vlan
+===
+
+private-vlan primary
+
+---
+
+(config
+  (private_vlan_statement
+    arg: (value)))
+
+===
+redundancy auto-sync
+===
+
+auto-sync running-config
+
+---
+
+(config
+  (auto_sync_statement
+    arg: (value)))
+
+===
+route-map continue
+===
+
+continue 100
+
+---
+
+(config
+  (continue_statement
+    arg: (value)))
+
+===
+policy-map-class random-detect
+===
+
+random-detect cos-based
+
+---
+
+(config
+  (random_detect_statement
+    arg: (value)))
+
+===
+misc rich negation (no match / no set)
+===
+
+no set metric 100
+no match ip address 10
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (set_statement
+      arg: (value)
+      arg: (value)))
+  (negated_statement
+    (negation_keyword)
+    keyword: (match_statement
+      arg: (value)
+      arg: (value)
+      arg: (value))))
+
+===
+misc rich with jinja args
+===
+
+set ip dscp {{ dscp_value }}
+match access-group name {{ acl_name }}
+
+---
+
+(config
+  (set_statement
+    arg: (value)
+    arg: (value)
+    arg: (output))
+  (match_statement
+    arg: (value)
+    arg: (value)
+    arg: (output)))

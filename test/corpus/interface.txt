@@ -1,0 +1,118 @@
+===
+interface section empty body
+===
+
+interface GigabitEthernet0/0
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (eos)))
+
+===
+interface section with unrecognized body
+===
+
+interface GigabitEthernet0/0
+ ip address 10.0.0.1 255.255.255.0
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (command_line
+      name: (identifier)
+      arg: (value)
+      arg: (value)
+      arg: (value))
+    (eos)))
+
+===
+interface config-if rich commands
+===
+
+interface GigabitEthernet0/0
+ description Uplink to core
+ speed 1000
+ duplex full
+ mtu 1500
+ shutdown
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (description_statement
+      text: (value)
+      text: (value)
+      text: (value))
+    (speed_statement
+      value: (value))
+    (duplex_statement
+      value: (value))
+    (mtu_statement
+      size: (value))
+    (shutdown_statement)
+    (eos)))
+
+===
+config-if rich negation
+===
+
+interface GigabitEthernet0/0
+ no shutdown
+ no description
+ no speed 1000
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (negated_statement
+      (negation_keyword)
+      keyword: (shutdown_statement))
+    (negated_statement
+      (negation_keyword)
+      keyword: (description_statement))
+    (negated_statement
+      (negation_keyword)
+      keyword: (speed_statement
+        value: (value)))
+    (eos)))
+
+===
+config-if rich commands with jinja args
+===
+
+interface GigabitEthernet0/0
+ description {{ desc }}
+ speed {{ sp }}
+ mtu {{ m }}
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (description_statement
+      text: (output))
+    (speed_statement
+      value: (output))
+    (mtu_statement
+      size: (output))
+    (eos)))

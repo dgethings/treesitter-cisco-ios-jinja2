@@ -1,0 +1,26 @@
+! Sample Cisco IOS + Jinja2 configuration exercising the highlight captures.
+hostname r1
+!
+interface GigabitEthernet0/0
+ description uplink to core
+ no shutdown
+ speed 1000
+ duplex full
+ mtu 1500
+!
+router ospf 1
+ router-id 10.0.0.1
+ network 10.0.0.0 0.0.0.255 area 0
+ passive-interface default
+!
+permit ip 10.0.0.0 0.0.0.255 any
+deny   tcp any any eq 22
+! this is an IOS comment line
+{# a Jinja2 comment #}
+{% set loopback_base = "10.0.99" %}
+{% include "snmp-common.j2" ignore missing %}
+{% for n in range(1, 5) %}
+interface Loopback{{ n }}
+ description lb-{{ n }}
+!
+{% endfor %}

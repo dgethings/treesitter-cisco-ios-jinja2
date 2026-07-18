@@ -1,0 +1,64 @@
+===
+top-level generic command (ip route)
+===
+
+ip route 10.0.0.0 255.255.0.0 172.31.6.6
+
+---
+
+(config
+  (command_line
+    name: (identifier)
+    arg: (value)
+    arg: (value)
+    arg: (value)
+    arg: (value)))
+
+===
+generic command inside an interface section
+===
+
+interface GigabitEthernet0/0
+ bandwidth 1000
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (command_line
+      name: (identifier)
+      arg: (value))
+    (eos)))
+
+===
+negated generic command (no <generic>)
+===
+
+no spd enable
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (command_line
+      name: (identifier)
+      arg: (value))))
+
+===
+generic command with jinja-interpolated args
+===
+
+ip address {{ ip }} {{ mask }}
+
+---
+
+(config
+  (command_line
+    name: (identifier)
+    arg: (value)
+    arg: (output)
+    arg: (output)))

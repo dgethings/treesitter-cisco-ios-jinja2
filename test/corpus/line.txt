@@ -1,0 +1,184 @@
+===
+exec-timeout
+===
+
+exec-timeout 5 0
+
+---
+
+(config
+  (exec_timeout_statement
+    arg: (value)
+    arg: (value)))
+
+===
+login and password
+===
+
+login local
+password 7 mypass
+
+---
+
+(config
+  (login_statement
+    arg: (value))
+  (password_statement
+    arg: (value)
+    arg: (value)))
+
+===
+transport input
+===
+
+transport input ssh
+
+---
+
+(config
+  (transport_statement
+    arg: (value)
+    arg: (value)))
+
+===
+access-class and terminal-type
+===
+
+access-class 10 in
+terminal-type vt100
+
+---
+
+(config
+  (access_class_statement
+    arg: (value)
+    arg: (value))
+  (terminal_type_statement
+    arg: (value)))
+
+===
+length and width
+===
+
+length 0
+width 80
+
+---
+
+(config
+  (length_statement
+    arg: (value))
+  (width_statement
+    arg: (value)))
+
+===
+bare keyword rich rules
+===
+
+editing
+motd-banner
+
+---
+
+(config
+  (editing_statement)
+  (motd_banner_statement))
+
+===
+character/bits rich rules
+===
+
+escape-character 27
+activation-character 13
+databits 8
+parity even
+padding 12
+stopbits 1
+
+---
+
+(config
+  (escape_character_statement
+    arg: (value))
+  (activation_character_statement
+    arg: (value))
+  (databits_statement
+    arg: (value))
+  (parity_statement
+    arg: (value))
+  (padding_statement
+    arg: (value))
+  (stopbits_statement
+    arg: (value)))
+
+===
+config-line rich negation
+===
+
+no login
+no exec-timeout 5 0
+no transport input ssh
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (login_statement))
+  (negated_statement
+    (negation_keyword)
+    keyword: (exec_timeout_statement
+      arg: (value)
+      arg: (value)))
+  (negated_statement
+    (negation_keyword)
+    keyword: (transport_statement
+      arg: (value)
+      arg: (value))))
+
+===
+config-line rich with jinja args
+===
+
+exec-timeout {{ mins }} {{ secs }}
+password 7 {{ secret }}
+transport input {{ proto }}
+
+---
+
+(config
+  (exec_timeout_statement
+    arg: (output)
+    arg: (output))
+  (password_statement
+    arg: (value)
+    arg: (output))
+  (transport_statement
+    arg: (value)
+    arg: (output)))
+
+===
+config-line rich inside interface section
+===
+
+interface GigabitEthernet0/0
+ exec-timeout 5 0
+ login local
+ transport input ssh
+!
+
+---
+
+(config
+  (interface_section
+    (interface_header
+      name: (interface_name))
+    (exec_timeout_statement
+      arg: (value)
+      arg: (value))
+    (login_statement
+      arg: (value))
+    (transport_statement
+      arg: (value)
+      arg: (value))
+    (eos)))

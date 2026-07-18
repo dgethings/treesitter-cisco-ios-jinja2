@@ -1,0 +1,128 @@
+===
+permit ip any any
+===
+
+permit ip any any
+
+---
+
+(config
+  (permit_statement
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)))
+
+===
+permit tcp with eq port
+===
+
+permit tcp 10.0.0.0 0.0.0.255 any eq 443
+
+---
+
+(config
+  (permit_statement
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)))
+
+===
+deny udp snmp
+===
+
+deny udp any any eq snmp
+
+---
+
+(config
+  (deny_statement
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)))
+
+===
+permit icmp host echo
+===
+
+permit icmp host 10.0.0.1 any echo
+
+---
+
+(config
+  (permit_statement
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)))
+
+===
+IPv6 ACE
+===
+
+permit ipv6 2001:db8::/32 any
+
+---
+
+(config
+  (permit_statement
+    action_args: (value)
+    action_args: (value)
+    action_args: (value)))
+
+===
+ACE negation (no permit / no deny)
+===
+
+no deny ip any any
+no permit tcp any any eq 22
+
+---
+
+(config
+  (negated_statement
+    (negation_keyword)
+    keyword: (deny_statement
+      action_args: (value)
+      action_args: (value)
+      action_args: (value)))
+  (negated_statement
+    (negation_keyword)
+    keyword: (permit_statement
+      action_args: (value)
+      action_args: (value)
+      action_args: (value)
+      action_args: (value)
+      action_args: (value))))
+
+===
+ACE with jinja arg
+===
+
+permit ip {{ src }} any
+
+---
+
+(config
+  (permit_statement
+    action_args: (value)
+    action_args: (output)
+    action_args: (value)))
+
+===
+bare permit and deny
+===
+
+permit
+deny
+
+---
+
+(config
+  (permit_statement)
+  (deny_statement))
