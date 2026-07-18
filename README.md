@@ -117,3 +117,9 @@ Add test(s) to [test/corpus](./test/corpus/), either by adding to an existing fi
 Run the tests using `make test`. Only your added test should fail.
 Update [grammer.js](./grammar.js) to implement the parser and generate the AST.
 Rerun the test using `make test`. All tests should pass.
+
+## Thanks
+
+Obvious thanks go to the [Treesitter](https://github.com/tree-sitter/tree-sitter) folks for the project.
+
+The Jinja2 part of the parser is heavily inspired by [geigerzaehler/tree-sitter-jinja2](https://github.com/geigerzaehler/tree-sitter-jinja2). There is/was no license in that repo, so I hope this is ok.
